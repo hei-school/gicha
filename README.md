@@ -7,3 +7,9 @@ The Python framework is [Chalice](https://aws.github.io/chalice/). The infrastru
 Gicha enforces a specific way of operating Chalice from Github.
 In fact, Gicha is short for **Gi**thub + **Cha**lice.
 In particular, CI/CD Github actions are managed by Gicha.
+
+## Usage
+
+```diff
+- gicha-cli coming soon. You just wait for it!
+```
