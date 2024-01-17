@@ -1,11 +1,12 @@
 from chalice import Chalice
+import os
 
-app = Chalice(app_name='gicha')
+app = Chalice(app_name="gicha")
 
 
-@app.route('/')
+@app.route("/")
 def index():
-    return {'hello': 'world'}
+    return {"hello": os.environ["USERNAME"]}
 
 
 # The view function above will return {"hello": "world"}

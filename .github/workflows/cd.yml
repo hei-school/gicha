@@ -1,0 +1,35 @@
+name: CD
+
+on:
+  push:
+    branches:
+      - 'prod'
+      - 'preprod'
+
+  workflow_dispatch:
+
+  workflow_call:
+
+jobs:
+  deploy-api:
+    if: ${{ github.ref_name == 'prod' || github.ref_name == 'preprod' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      AWS_REGION: eu-west-3
+
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+      - uses: hei-school/aws-credentials-setter@v1.0.3
+        with:
+          secrets: ${{ toJSON(secrets) }}
+          region: ${{ env.AWS_REGION }}
+
+      - name: Deploy application
+        run: |
+            python3 -m pip install chalice
+            chalice deploy --stage ${{ github.ref_name }}
