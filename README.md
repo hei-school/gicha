@@ -10,6 +10,5 @@ In particular, CI/CD Github actions are managed by Gicha.
 
 ## Usage
 
-```diff
-- gicha-cli coming soon. You just wait for it!
-```
+Create a new Gicha stack in minutes using the [Gicha CLI](https://github.com/hei-school/gicha-cli).
+Update an existing Gicha stack in seconds using the same CLI!
