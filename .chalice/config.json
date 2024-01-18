@@ -5,13 +5,13 @@
     "prod": {
       "lambda_memory_size": <?memory>,
       "environment_variables": {
-        "USERNAME": "Lou BOGOSSE De PROD"
+        <?env-vars-prod>
       }
     },
     "preprod": {
       "lambda_memory_size": <?memory>,
       "environment_variables": {
-        "USERNAME": "Lou BOGOSSE De PREPROD"
+        <?env-vars-preprod>
       }
     }
   }
