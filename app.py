@@ -9,7 +9,8 @@ def index():
     return {"hello": os.environ["USERNAME"]}
 
 
-# The view function above will return {"hello": "world"}
+# The view function above will return {"hello": "Lou"}
+# if USERNAME env var is set to Lou
 # whenever you make an HTTP GET request to '/'.
 #
 # Here are a few more examples:
