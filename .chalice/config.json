@@ -3,11 +3,13 @@
   "app_name": "gicha",
   "stages": {
     "prod": {
+      "lambda_memory_size": <?memory>,
       "environment_variables": {
         "USERNAME": "Lou BOGOSSE De PROD"
       }
     },
     "preprod": {
+      "lambda_memory_size": <?memory>,
       "environment_variables": {
         "USERNAME": "Lou BOGOSSE De PREPROD"
       }
