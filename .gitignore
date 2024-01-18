@@ -1,3 +1,4 @@
-.chalice/
+.chalice/deployed
+.chalice/deployments
 .coverage
 **/__pycache__/
