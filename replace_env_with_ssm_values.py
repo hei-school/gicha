@@ -38,4 +38,4 @@ if __name__ == '__main__':
         print("Usage python main.py <file_path>")
     else:
         env_file_path = sys.argv[1]
-        print(replace_placeholders(file_path))
+        print(replace_placeholders(env_file_path))
