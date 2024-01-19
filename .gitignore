@@ -2,3 +2,4 @@
 .chalice/deployments
 .coverage
 **/__pycache__/
+.idea
