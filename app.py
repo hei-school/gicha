@@ -9,6 +9,10 @@ def index():
     return {"hello": os.getenv("USERNAME", "Beautiful but unknown person")}
 
 
+def minimalistic_handler(event, context):
+    return {"hello": "no chalice nor any framework whatsoever here"}
+
+
 # The view function above will return {"hello": "Lou"}
 # if USERNAME env var is set to Lou
 # whenever you make an HTTP GET request to '/'.
