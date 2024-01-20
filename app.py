@@ -6,7 +6,7 @@ app = Chalice(app_name="gicha")
 
 @app.route("/")
 def index():
-    return {"hello": os.environ["USERNAME"]}
+    return {"hello": os.getenv("USERNAME", "Beautiful but unknown person")}
 
 
 # The view function above will return {"hello": "Lou"}
